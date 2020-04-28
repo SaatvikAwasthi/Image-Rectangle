@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow: hidden;
+}
+
+#front-canvas {
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -width: 80vw;
+    -height: 100vh;
+    z-index: 100;
+    cursor: crosshair;
+    border: 2px solid #000000;
+}
+
+#back-canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -width: 80vw;
+    -height: 100vh;
+    z-index: 0;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    overflow: auto;
+    border-right: 2px solid black;
+}
+
+.sidebar .box {
+    border: 2px solid #000000;
+    margin: 5px;
+    padding: 5px;
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+.sidebar .box button {
+    margin-left: 5px;
+}
+
+.sidebar #rect-list {
+    overflow-y: scroll;
+}
+
+.sidebar table tr:hover td {
+    background-color: blue;
+    color: white;
+    cursor: default;
+}
+
+.sidebar table tr:hover td .delete-rect {
+    cursor: pointer;
+    text-align: center;
+}
